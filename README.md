@@ -1,4 +1,4 @@
-# github-stars
+# github-stars <img src="https://github.com/pvbaleeiro/github-stars/blob/master/GithubStars/resource/image/Media.xcassets/AppIcon.appiconset/ios-marketing.png?raw=true" alt="GithubStars" width="60" height="60">
 
 Simples aplicativo que exibe os repositórios mais populares de Java, utilizando a API do [GitHub](https://github.com)
 
