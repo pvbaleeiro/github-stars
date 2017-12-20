@@ -18,11 +18,12 @@ extension UIButton {
     func defaultStyle() {
         
         //
+        backgroundColor = .clear
         layer.borderColor = UIColor.lightGray.cgColor
         layer.cornerRadius = 2
         layer.borderWidth = 1
         titleLabel?.font = UIFont.sanFranciscoBold(size: 12)
-        setTitleColor(UIColor.white, for: UIControlState.normal)
+        setTitleColor(UIColor.lightGray, for: UIControlState.normal)
         contentHorizontalAlignment = UIControlContentHorizontalAlignment.center
         
         //HIGHLIGHTED
@@ -60,6 +61,6 @@ extension UIButton {
         backgroundColor = UIColor.grayDisable()
     }
     @objc func resetBackgroundColor(_ sender:UIButton) {
-        backgroundColor = UIColor.lightGray
+        backgroundColor = UIColor.clear
     }
 }
