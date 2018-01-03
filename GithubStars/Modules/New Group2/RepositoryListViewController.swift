@@ -20,6 +20,11 @@ class RepositoryListViewController: BaseViewController, RepositoryListViewProtoc
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Setup view
+        setupLayout()
+        setupData()
+        setupText()
+        
         repositoryList = presenter.loadRepositories()
     }
 }

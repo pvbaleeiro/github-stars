@@ -27,9 +27,11 @@ protocol RepositoryListPresenterProtocol: class {
 // MARK: - Router
 protocol RepositoryListRouterProtocol: class {
     
+    weak var viewController: BaseViewController! { get set }
 }
 
 // MARK: - Interactor
 protocol RepositoryListInteractorProtocol: class {
     
+    func fetchRepositories() -> [Repository]
 }

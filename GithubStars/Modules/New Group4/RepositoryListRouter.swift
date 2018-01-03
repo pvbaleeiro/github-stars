@@ -9,35 +9,39 @@
 import Foundation
 import UIKit
 
-//class RepositoryListRouter {
-//
-//    // MARK: Properties
-//
-//    weak var view: UIViewController?
-//
-//    // MARK: Static methods
-//
-//    static func setupModule() -> RepositoryListViewController {
-//        let viewController = UIStoryboard.loadViewController() as RepositoryListViewController
-//        let presenter = RepositoryListPresenter()
-//        let router = RepositoryListRouter()
-//        let interactor = RepositoryListInteractor()
-//
-//        viewController.presenter =  presenter
-//
-//        presenter.view = viewController
-//        presenter.router = router
-//        presenter.interactor = interactor
-//
-//        router.view = viewController
-//
-//        interactor.output = presenter
-//
-//        return viewController
+class RepositoryListRouter: RepositoryListRouterProtocol, Storyboarded {
+    
+    // MARK: Properties
+    static let storyboardName = "RepositoryList"
+    weak var viewController: BaseViewController!
+    
+    // MARK: Static functions
+    static func assembleModule() -> BaseViewController {
+        let view = RepositoryListRouter.repositoryListViewController()
+        let presenter = RepositoryListPresenter()
+        let router = RepositoryListRouter()
+        let interactor = RepositoryListInteractor()
+        
+        view.presenter = presenter
+        router.viewController = view
+        
+        presenter.view = view
+        presenter.router = router
+        presenter.interactor = interactor
+        
+        return view
+    }
+    
+    static func repositoryListViewController() -> RepositoryListViewController {
+        return storyboard.instantiateViewController()
+    }
+    
+//    func closeFaq() {
+//        viewController.dismiss(animated: true, completion: nil)
 //    }
-//}
-//
-//extension RepositoryListRouter: RepositoryListWireframe {
-//    // TODO: Implement wireframe methods
-//}
-
+//    
+//    func presentViewPlayer(link: String) {
+//        let playerController = YoutubePlayerRouter.assembleModule(link: link)
+//        viewController.navigationController?.pushViewController(playerController, animated: true)
+//    }
+}

@@ -8,19 +8,15 @@
 
 import Foundation
 
-//class RepositoryListPresenter {
-//
-//    // MARK: Properties
-//    weak var view: RepositoryListView?
-//    var router: RepositoryListWireframe?
-//    var interactor: RepositoryListUseCase?
-//}
-//
-//extension RepositoryListPresenter: RepositoryListPresentation {
-//    // TODO: implement presentation methods
-//}
-//
-//extension RepositoryListPresenter: RepositoryListInteractorOutput {
-//    // TODO: implement interactor output methods
-//}
+class RepositoryListPresenter: RepositoryListPresenterProtocol {
+    
+    // MARK: Properties
+    weak var view: RepositoryListViewProtocol!
+    var router: RepositoryListRouterProtocol!
+    var interactor: RepositoryListInteractorProtocol!
+    
+    func loadRepositories() -> [Repository] {
+        return interactor.fetchRepositories()
+    }
+}
 

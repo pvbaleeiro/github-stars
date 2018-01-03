@@ -8,14 +8,12 @@
 
 import Foundation
 
-//class RepositoryListInteractor {
-//
-//    // MARK: Properties
-//
-//    weak var output: RepositoryListInteractorOutput?
-//}
-//
-//extension RepositoryListInteractor: RepositoryListUseCase {
-//    // TODO: Implement use case methods
-//}
+class RepositoryListInteractor: RepositoryListInteractorProtocol {
+    
+    func fetchRepositories() -> [Repository] {
+    
+        var repoList: [Repository] = []
+        return repoList
+    }
+}
 
