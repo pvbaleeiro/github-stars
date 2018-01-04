@@ -11,9 +11,12 @@ target 'GithubStars' do
   pod 'Alamofire', '~> 4.5.1'
   #Biblioteca para tratamento de imagens, utilização de Cache, etc
   pod 'AlamofireImage', '~> 3.3.0'
-  #Implementação para modelagem de classe em JSON
+  #Biblioteca para modelagem de classe em JSON
   pod 'AlamofireObjectMapper', :git =>'https://github.com/tristanhimmelman/AlamofireObjectMapper.git', :branch => 'swift-4'
-
+  #Implementação para programação reativa
+  pod 'RxSwift',    '~> 4.0'
+  pod 'RxCocoa',    '~> 4.0'
+  
   target 'GithubStarsTests' do
     inherit! :search_paths
     # Pods for testing

@@ -16,6 +16,15 @@
 		3A079C7A1FFD607400C389CD /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A079C791FFD607400C389CD /* Storyboarded.swift */; };
 		3A079C7C1FFD652200C389CD /* NibReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A079C7B1FFD652200C389CD /* NibReusable.swift */; };
 		3A079C7F1FFD66DD00C389CD /* UIStoryboard+Instantiate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A079C7E1FFD66DD00C389CD /* UIStoryboard+Instantiate.swift */; };
+		3A079C8E1FFE354F00C389CD /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A079C8D1FFE354F00C389CD /* SplashViewController.swift */; };
+		3A079C901FFE357900C389CD /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A079C8F1FFE357900C389CD /* Splash.storyboard */; };
+		3A079C931FFE370B00C389CD /* SplashContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A079C921FFE370B00C389CD /* SplashContract.swift */; };
+		3A079C981FFE373200C389CD /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A079C971FFE373200C389CD /* SplashPresenter.swift */; };
+		3A079C9A1FFE373600C389CD /* SplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A079C991FFE373600C389CD /* SplashInteractor.swift */; };
+		3A079C9C1FFE373B00C389CD /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A079C9B1FFE373B00C389CD /* SplashRouter.swift */; };
+		3A079C9E1FFE3BC100C389CD /* UIWindow+SetRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A079C9D1FFE3BC100C389CD /* UIWindow+SetRoot.swift */; };
+		3A079CB61FFE515A00C389CD /* BaseTableView+CommomnViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A079CB51FFE515A00C389CD /* BaseTableView+CommomnViewProtocol.swift */; };
+		3A079CB81FFE517600C389CD /* CommonViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A079CB71FFE517600C389CD /* CommonViewProtocol.swift */; };
 		3B97D5D5CA078C63A8000A4A /* Pods_GithubStarsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E28B7DE0E0899111170C69B /* Pods_GithubStarsTests.framework */; };
 		3E4EC78F0315C2A7D512C2AE /* Pods_GithubStarsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A17387D60A63F4156DE53FB /* Pods_GithubStarsUITests.framework */; };
 		5DCB787E1FE7EA4300726CF7 /* APIGithubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCB787D1FE7EA4300726CF7 /* APIGithubTests.swift */; };
@@ -87,6 +96,15 @@
 		3A079C791FFD607400C389CD /* Storyboarded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		3A079C7B1FFD652200C389CD /* NibReusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibReusable.swift; sourceTree = "<group>"; };
 		3A079C7E1FFD66DD00C389CD /* UIStoryboard+Instantiate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Instantiate.swift"; sourceTree = "<group>"; };
+		3A079C8D1FFE354F00C389CD /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		3A079C8F1FFE357900C389CD /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
+		3A079C921FFE370B00C389CD /* SplashContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashContract.swift; sourceTree = "<group>"; };
+		3A079C971FFE373200C389CD /* SplashPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
+		3A079C991FFE373600C389CD /* SplashInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashInteractor.swift; sourceTree = "<group>"; };
+		3A079C9B1FFE373B00C389CD /* SplashRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
+		3A079C9D1FFE3BC100C389CD /* UIWindow+SetRoot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+SetRoot.swift"; sourceTree = "<group>"; };
+		3A079CB51FFE515A00C389CD /* BaseTableView+CommomnViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BaseTableView+CommomnViewProtocol.swift"; sourceTree = "<group>"; };
+		3A079CB71FFE517600C389CD /* CommonViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonViewProtocol.swift; sourceTree = "<group>"; };
 		5509F222DF62925FEB9AE98C /* Pods-GithubStarsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubStarsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GithubStarsTests/Pods-GithubStarsTests.release.xcconfig"; sourceTree = "<group>"; };
 		5DCB787D1FE7EA4300726CF7 /* APIGithubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIGithubTests.swift; sourceTree = "<group>"; };
 		5DCB787F1FE81DF500726CF7 /* Date+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Util.swift"; sourceTree = "<group>"; };
@@ -195,11 +213,9 @@
 		3A079C341FFD51F600C389CD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				3A079C6C1FFD56A800C389CD /* Router */,
-				3A079C6B1FFD569F00C389CD /* Interactor */,
-				3A079C6A1FFD569800C389CD /* View */,
-				3A079C691FFD568F00C389CD /* Presenter */,
-				3A079C661FFD566700C389CD /* Contract */,
+				3A079CB11FFE50B300C389CD /* Commom */,
+				3A079C801FFE349400C389CD /* Main */,
+				3A079C811FFE34AF00C389CD /* Splash */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -271,8 +287,105 @@
 			isa = PBXGroup;
 			children = (
 				3A079C7E1FFD66DD00C389CD /* UIStoryboard+Instantiate.swift */,
+				3A079C9D1FFE3BC100C389CD /* UIWindow+SetRoot.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3A079C801FFE349400C389CD /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3A079C661FFD566700C389CD /* Contract */,
+				3A079C6B1FFD569F00C389CD /* Interactor */,
+				3A079C691FFD568F00C389CD /* Presenter */,
+				3A079C6C1FFD56A800C389CD /* Router */,
+				3A079C6A1FFD569800C389CD /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		3A079C811FFE34AF00C389CD /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				3A079C911FFE370000C389CD /* Contract */,
+				3A079C951FFE371C00C389CD /* Interactor */,
+				3A079C941FFE371400C389CD /* Presenter */,
+				3A079C961FFE372600C389CD /* Router */,
+				3A079C8C1FFE354300C389CD /* View */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		3A079C8C1FFE354300C389CD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3A079C8D1FFE354F00C389CD /* SplashViewController.swift */,
+				80F8DBF41FE57F7300197B35 /* LaunchScreen.storyboard */,
+				3A079C8F1FFE357900C389CD /* Splash.storyboard */,
+			);
+			name = View;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		3A079C911FFE370000C389CD /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				3A079C921FFE370B00C389CD /* SplashContract.swift */,
+			);
+			name = Contract;
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
+		3A079C941FFE371400C389CD /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3A079C971FFE373200C389CD /* SplashPresenter.swift */,
+			);
+			name = Presenter;
+			path = "New Group2";
+			sourceTree = "<group>";
+		};
+		3A079C951FFE371C00C389CD /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				3A079C991FFE373600C389CD /* SplashInteractor.swift */,
+			);
+			name = Interactor;
+			path = "New Group3";
+			sourceTree = "<group>";
+		};
+		3A079C961FFE372600C389CD /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				3A079C9B1FFE373B00C389CD /* SplashRouter.swift */,
+			);
+			name = Router;
+			path = "New Group4";
+			sourceTree = "<group>";
+		};
+		3A079CB11FFE50B300C389CD /* Commom */ = {
+			isa = PBXGroup;
+			children = (
+				3A079CB91FFE518000C389CD /* Contract */,
+				3A079CB21FFE50C400C389CD /* View */,
+			);
+			path = Commom;
+			sourceTree = "<group>";
+		};
+		3A079CB21FFE50C400C389CD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3A079CB51FFE515A00C389CD /* BaseTableView+CommomnViewProtocol.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3A079CB91FFE518000C389CD /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				3A079CB71FFE517600C389CD /* CommonViewProtocol.swift */,
+			);
+			path = Contract;
 			sourceTree = "<group>";
 		};
 		80F8DBDC1FE57F7200197B35 = {
@@ -300,12 +413,12 @@
 		80F8DBE71FE57F7300197B35 /* GithubStars */ = {
 			isa = PBXGroup;
 			children = (
+				80F8DBF71FE57F7300197B35 /* Info.plist */,
 				3A079C7D1FFD66CC00C389CD /* Extensions */,
 				3A079C341FFD51F600C389CD /* Modules */,
 				3A079C771FFD578C00C389CD /* SupportingFiles */,
 				3A079C781FFD605700C389CD /* Utils */,
 				3A079C331FFD51E400C389CD /* mvc */,
-				80F8DBF71FE57F7300197B35 /* Info.plist */,
 			);
 			path = GithubStars;
 			sourceTree = "<group>";
@@ -401,7 +514,6 @@
 			isa = PBXGroup;
 			children = (
 				80F8DBEC1FE57F7300197B35 /* Main.storyboard */,
-				80F8DBF41FE57F7300197B35 /* LaunchScreen.storyboard */,
 			);
 			path = storyboard;
 			sourceTree = "<group>";
@@ -613,6 +725,7 @@
 			files = (
 				80F8DC611FE63CD700197B35 /* Media.xcassets in Resources */,
 				80F8DBF61FE57F7300197B35 /* LaunchScreen.storyboard in Resources */,
+				3A079C901FFE357900C389CD /* Splash.storyboard in Resources */,
 				80F8DBF31FE57F7300197B35 /* Assets.xcassets in Resources */,
 				80F8DBEE1FE57F7300197B35 /* Main.storyboard in Resources */,
 				3A079C761FFD56E900C389CD /* RepositoryList.storyboard in Resources */,
@@ -665,6 +778,8 @@
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -672,6 +787,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -798,17 +915,23 @@
 			files = (
 				3A079C7C1FFD652200C389CD /* NibReusable.swift in Sources */,
 				80F8DC3B1FE5B52300197B35 /* BaseViewController.swift in Sources */,
+				3A079C9E1FFE3BC100C389CD /* UIWindow+SetRoot.swift in Sources */,
 				3A079C681FFD567800C389CD /* RepositoryListContract.swift in Sources */,
 				80F8DC501FE5F5D600197B35 /* UserDetail.swift in Sources */,
+				3A079C931FFE370B00C389CD /* SplashContract.swift in Sources */,
 				80F8DC561FE6132700197B35 /* PullRequestsCell.swift in Sources */,
 				80F8DC251FE5921700197B35 /* Reachability.swift in Sources */,
 				80F8DC351FE5AFF900197B35 /* Respository.swift in Sources */,
 				80F8DC5B1FE62B6E00197B35 /* ControllerExtension.swift in Sources */,
 				80F8DC541FE60FC800197B35 /* PullRequestsViewContoller.swift in Sources */,
+				3A079CB61FFE515A00C389CD /* BaseTableView+CommomnViewProtocol.swift in Sources */,
 				3A079C721FFD56C000C389CD /* RepositoryListInteractor.swift in Sources */,
+				3A079C981FFE373200C389CD /* SplashPresenter.swift in Sources */,
 				3A079C7F1FFD66DD00C389CD /* UIStoryboard+Instantiate.swift in Sources */,
 				80F8DC521FE6047300197B35 /* FormatUtil.swift in Sources */,
 				80F8DC4A1FE5BBF500197B35 /* UIFont+Util.swift in Sources */,
+				3A079CB81FFE517600C389CD /* CommonViewProtocol.swift in Sources */,
+				3A079C9A1FFE373600C389CD /* SplashInteractor.swift in Sources */,
 				80F8DC201FE58FDA00197B35 /* APIResponse.swift in Sources */,
 				80F8DC381FE5B4F200197B35 /* MainViewController.swift in Sources */,
 				80F8DC1E1FE58F0F00197B35 /* APIManager.swift in Sources */,
@@ -829,6 +952,8 @@
 				80F8DC231FE5914200197B35 /* LogUtil.swift in Sources */,
 				80F8DC4E1FE5EA6D00197B35 /* Owner.swift in Sources */,
 				80F8DBE91FE57F7300197B35 /* AppDelegate.swift in Sources */,
+				3A079C8E1FFE354F00C389CD /* SplashViewController.swift in Sources */,
+				3A079C9C1FFE373B00C389CD /* SplashRouter.swift in Sources */,
 				80F8DC411FE5B87A00197B35 /* BaseTableViewCell.swift in Sources */,
 				5DCB78801FE81DF500726CF7 /* Date+Util.swift in Sources */,
 				80F8DC441FE5B94C00197B35 /* UIView+Util.swift in Sources */,

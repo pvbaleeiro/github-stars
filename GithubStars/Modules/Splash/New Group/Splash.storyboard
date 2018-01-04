@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="q0t-vR-fjz">
+            <objects>
+                <viewController storyboardIdentifier="SplashViewController" id="KWK-fR-rbb" customClass="SplashViewController" customModule="GithubStars" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EGV-ja-CMo"/>
+                        <viewControllerLayoutGuide type="bottom" id="YPm-b2-eCO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gdn-92-4fZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="github_launch" translatesAutoresizingMaskIntoConstraints="NO" id="NIv-jM-otB">
+                                <rect key="frame" x="37.5" y="0.0" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="pdh-fs-8Hf"/>
+                                    <constraint firstAttribute="height" constant="300" id="qNm-uI-KLI"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Github Stars" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgT-aQ-PgJ">
+                                <rect key="frame" x="37.5" y="300" width="300" height="54"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.16862745100000001" green="0.1843137255" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qgT-aQ-PgJ" firstAttribute="leading" secondItem="NIv-jM-otB" secondAttribute="leading" id="Rbb-rK-WPz"/>
+                            <constraint firstItem="qgT-aQ-PgJ" firstAttribute="trailing" secondItem="NIv-jM-otB" secondAttribute="trailing" id="amj-Yc-u2I"/>
+                            <constraint firstItem="NIv-jM-otB" firstAttribute="centerX" secondItem="Gdn-92-4fZ" secondAttribute="centerX" id="avF-4F-1LU"/>
+                            <constraint firstItem="NIv-jM-otB" firstAttribute="top" secondItem="Gdn-92-4fZ" secondAttribute="top" id="eeq-0A-9QO"/>
+                            <constraint firstItem="qgT-aQ-PgJ" firstAttribute="top" secondItem="NIv-jM-otB" secondAttribute="bottom" id="kYY-r2-Wl4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UiF-DC-KNi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="124" y="217"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="github_launch" width="1365" height="1365"/>
+    </resources>
+</document>
