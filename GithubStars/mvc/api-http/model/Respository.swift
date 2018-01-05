@@ -15,14 +15,14 @@ class Repository: Mappable {
     //-------------------------------------------------------------------------------------------------------------
     // MARK: Properties
     //-------------------------------------------------------------------------------------------------------------
-    var id: Int?
-    var name: String?
-    var fullName: String?
-    var description: String?
-    var owner: Owner?
-    var forks: Int?
-    var stargazersCount: Int?
-    var pullsUrl: String?
+    private(set) var id: Int?
+    private(set) var name: String?
+    private(set) var fullName: String?
+    private(set) var description: String?
+    private(set) var owner: Owner?
+    private(set) var forks: Int?
+    private(set) var stargazersCount: Int?
+    private(set) var pullsUrl: String?
     
     //-------------------------------------------------------------------------------------------------------------
     // MARK: Construtor

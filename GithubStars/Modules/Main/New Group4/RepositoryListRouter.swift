@@ -24,6 +24,7 @@ class RepositoryListRouter: RepositoryListRouterProtocol, Storyboarded {
         
         view.presenter = presenter
         router.viewController = view
+        interactor.output = presenter
         
         presenter.view = view
         presenter.router = router
@@ -36,12 +37,11 @@ class RepositoryListRouter: RepositoryListRouterProtocol, Storyboarded {
         return storyboard.instantiateViewController()
     }
     
-//    func closeFaq() {
-//        viewController.dismiss(animated: true, completion: nil)
-//    }
-//    
-//    func presentViewPlayer(link: String) {
-//        let playerController = YoutubePlayerRouter.assembleModule(link: link)
-//        viewController.navigationController?.pushViewController(playerController, animated: true)
-//    }
+    func presentDetails(forRepository repository: Repository) {
+        let detailModuleViewController = RepositoryDetailRouter.assembleModule(repository)
+        detailModuleViewController.setNavBarWithTitle(title: "\(repository.fullName ?? "Repositório") - PR")
+        
+        viewController.navigationController?.setNavigationBarHidden(false, animated: false)
+        viewController.navigationController?.pushViewController(detailModuleViewController, animated: true)
+    }
 }

@@ -7,13 +7,30 @@
 //
 
 import Foundation
+import Alamofire
+import ObjectMapper
+import AlamofireObjectMapper
+import RxSwift
 
 class RepositoryListInteractor: RepositoryListInteractorProtocol {
     
-    func fetchRepositories() -> [Repository] {
+    weak var output: RepositoryListInteractorOutputProtocol!
+    private var disposeBag = DisposeBag()
     
-        var repoList: [Repository] = []
-        return repoList
+    func fetchRepositories() {
+        
+        GithubService.fetchRepositoriesJavaByStars()
+            .subscribe(
+                onNext: { (repositories) in
+                    self.output.repositoriesFetched(repositories)
+
+                }, onError: { (error) in
+                    self.output.repositoriesFetchFailed()
+                }
+            )
+            .disposed(by: disposeBag)
     }
 }
+
+
 

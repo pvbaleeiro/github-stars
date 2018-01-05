@@ -15,9 +15,24 @@ class RepositoryListPresenter: RepositoryListPresenterProtocol {
     var router: RepositoryListRouterProtocol!
     var interactor: RepositoryListInteractorProtocol!
     
-    func loadRepositories() -> [Repository] {
+    func loadRepositories() {
         view.showSppinerFooter()
-        return interactor.fetchRepositories()
+        interactor.fetchRepositories()
+    }
+    
+    func didSelectRepository(_ repository: Repository) {
+        router.presentDetails(forRepository: repository)
+    }
+}
+
+extension RepositoryListPresenter: RepositoryListInteractorOutputProtocol {
+    func repositoriesFetched(_ repositories: RepositoryList) {
+        view.showRepositories(with: repositories.items!)
+        view.removeAllSppiners()
+    }
+    
+    func repositoriesFetchFailed() {
+        
     }
 }
 

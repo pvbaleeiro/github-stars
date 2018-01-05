@@ -41,7 +41,8 @@ extension SplashRouter: SplashRouterProtocol {
         let repositoryView = RepositoryListRouter.assembleModule()
         
         let navigationController = UINavigationController(rootViewController: repositoryView)
-        navigationController.setNavigationBarHidden(true, animated: false)
+        navigationController.setNavigationBarHidden(false, animated: false)
+        repositoryView.setNavBarWithTitle(title: "Github Java Stars")
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.switchMainViewController(viewController: navigationController)

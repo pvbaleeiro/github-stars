@@ -15,9 +15,9 @@ class RepositoryList: Mappable {
     //-------------------------------------------------------------------------------------------------------------
     // MARK: Properties
     //-------------------------------------------------------------------------------------------------------------
-    var totalCount: Int?
-    var incompleteResults: Bool?
-    var items: Array<Repository>?
+    private(set) var totalCount: Int?
+    private(set) var incompleteResults: Bool?
+    private(set) var items: Array<Repository>?
     
     
     //-------------------------------------------------------------------------------------------------------------
