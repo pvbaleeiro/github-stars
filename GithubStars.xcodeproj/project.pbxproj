@@ -235,6 +235,7 @@
 		3A079C341FFD51F600C389CD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				3A079CED1FFFE92700C389CD /* Login */,
 				3A079CB11FFE50B300C389CD /* Commom */,
 				3A079CD11FFFA02D00C389CD /* Detail */,
 				3A079C801FFE349400C389CD /* Main */,
@@ -506,6 +507,20 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		3A079CED1FFFE92700C389CD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		6C828E76158C3CD96E2A1BAB /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
 		80F8DBDC1FE57F7200197B35 = {
 			isa = PBXGroup;
 			children = (
@@ -551,6 +566,7 @@
 				80F8DC661FE70BA500197B35 /* FontsetTests.swift */,
 				80F8DC641FE6F76400197B35 /* FormatUtilTests.swift */,
 				80F8DC021FE57F7300197B35 /* Info.plist */,
+				6C828E76158C3CD96E2A1BAB /* Modules */,
 			);
 			path = GithubStarsTests;
 			sourceTree = "<group>";
