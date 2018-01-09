@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import HockeySDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        //Hockey config
+        hockeySetup()
+        
+        //Splash screen
         splashSetup()
         return true
     }
@@ -57,6 +62,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func switchMainViewController(viewController: UIViewController) {
         window?.makeKeyAndVisible()
         window?.set(rootViewController: viewController)
+    }
+    
+    //MARK: Hockey
+    private enum Hockey: String {
+        case identifier = "494ac6cf605549ba850d5e683b9f9cef"
+    }
+    
+    func hockeySetup() {
+        
+        BITHockeyManager.shared().configure(withIdentifier: Hockey.identifier.rawValue)
+        // Do some additional configuration if needed here
+        BITHockeyManager.shared().start()
+        BITHockeyManager.shared().authenticator.authenticateInstallation()
     }
 }
 

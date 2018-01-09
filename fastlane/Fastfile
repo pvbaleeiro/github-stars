@@ -1,0 +1,51 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+
+# Clean and increment build
+  before_all do
+    ensure_git_status_clean
+    
+    sh "./scripts/remove_pods.sh"
+    cocoapods
+    
+    increment_build_number
+  end
+
+
+  desc "Description of what the lane does"
+  lane :tests do
+  		run_tests(scheme: "GithubStarsTests")
+	end
+	
+	lane :beta do
+	
+	# Build the app.
+  gym(
+    workspace: "GithubStars.xcworkspace",
+    configuration: "Beta",
+    scheme: "GithubStars",
+    export_method: 'ad-hoc',
+  )
+  
+  # Upload the build to HockeyApp.
+  hockey(
+    api_token: ENV['HOCKEYAPP_TOKEN'],
+    public_identifier: ENV['HOCKEYAPP_BETA_ID'],
+    notes_type: "1",
+  )
+	
+end
+end
+

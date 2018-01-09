@@ -14,8 +14,10 @@ target 'GithubStars' do
   #Biblioteca para modelagem de classe em JSON
   pod 'AlamofireObjectMapper', :git =>'https://github.com/tristanhimmelman/AlamofireObjectMapper.git', :branch => 'swift-4'
   #Implementação para programação reativa
-  pod 'RxSwift',    '~> 4.0'
-  pod 'RxCocoa',    '~> 4.0'
+  pod 'RxSwift', '~> 4.0'
+  pod 'RxCocoa', '~> 4.0'
+  #Distribuição de app
+  pod 'HockeySDK', '~> 5.1.1'
   
   target 'GithubStarsTests' do
     inherit! :search_paths
