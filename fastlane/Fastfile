@@ -15,11 +15,6 @@ platform :ios do
 
 # Clean and increment build
   before_all do
-    ensure_git_status_clean
-    
-    sh "./scripts/remove_pods.sh"
-    cocoapods
-    
     increment_build_number
   end
 
@@ -30,7 +25,9 @@ platform :ios do
 	end
 	
 	lane :beta do
-	
+
+      add_badge(dark: true)
+
 	# Build the app.
   gym(
     workspace: "GithubStars.xcworkspace",

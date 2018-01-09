@@ -5,11 +5,17 @@ GEM
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
     babosa (1.0.2)
+    badge (0.8.7)
+      curb (~> 0.9)
+      fastimage (>= 1.6)
+      fastlane (>= 2.0)
+      mini_magick (>= 4.5)
     claide (1.0.2)
     colored (1.2)
     colored2 (3.1.2)
     commander-fastlane (4.4.5)
       highline (~> 1.7.2)
+    curb (0.9.4)
     declarative (0.0.10)
     declarative-option (0.1.0)
     domain_name (0.5.20170404)
@@ -58,6 +64,8 @@ GEM
       xcodeproj (>= 1.5.2, < 2.0.0)
       xcpretty (>= 0.2.4, < 1.0.0)
       xcpretty-travis-formatter (>= 0.0.3)
+    fastlane-plugin-badge (1.0.0)
+      badge (~> 0.8.2)
     gh_inspector (1.0.3)
     google-api-client (0.13.6)
       addressable (~> 2.5, >= 2.5.1)
@@ -138,6 +146,7 @@ PLATFORMS
 
 DEPENDENCIES
   fastlane
+  fastlane-plugin-badge
 
 BUNDLED WITH
    1.16.1
