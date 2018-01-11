@@ -15,6 +15,7 @@ protocol RepositoryListViewProtocol: CommonViewProtocol {
     
     // Presenter -> View
     func showRepositories(with repositories: [Repository])
+    func showAlertError()
 }
 
 // MARK: - Presenter
@@ -46,4 +47,5 @@ protocol RepositoryListInteractorProtocol: class {
 protocol RepositoryListInteractorOutputProtocol: class {
     func repositoriesFetched(_ repositories: RepositoryList)
     func repositoriesFetchFailed()
+    func notConnectedToInternet()
 }

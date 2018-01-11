@@ -32,7 +32,13 @@ extension RepositoryListPresenter: RepositoryListInteractorOutputProtocol {
     }
     
     func repositoriesFetchFailed() {
-        
+        view.removeAllSppiners()
+        view.showAlertError()
+    }
+    
+    func notConnectedToInternet() {
+        view.removeAllSppiners()
+        view.showAlertError()
     }
 }
 

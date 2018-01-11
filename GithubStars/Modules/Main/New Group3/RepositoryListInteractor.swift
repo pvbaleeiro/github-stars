@@ -25,7 +25,17 @@ class RepositoryListInteractor: RepositoryListInteractorProtocol {
                     self.output.repositoriesFetched(repositories)
 
                 }, onError: { (error) in
-                    self.output.repositoriesFetchFailed()
+                    guard let urlError = error as? URLError else {
+                        return
+                    }
+                    
+                    //Check error connection
+                    if urlError.code == .notConnectedToInternet {
+                        self.output.notConnectedToInternet()
+                        
+                    } else {
+                        self.output.repositoriesFetchFailed()
+                    }
                 }
             )
             .disposed(by: disposeBag)

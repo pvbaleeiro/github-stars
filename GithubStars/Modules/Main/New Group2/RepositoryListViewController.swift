@@ -68,6 +68,12 @@ extension RepositoryListViewController: RepositoryListViewProtocol {
     func showRepositories(with repositories: [Repository]) {
         self.repositoryList = repositories
     }
+    
+    func showAlertError() {
+        let alert = UIAlertController.init(title: "Erro", message: "Nenhuma resposta válida do servidor. Verifique sua conexão ou tente executar a operação novamente.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
+        self.present(alert, animated: true)
+    }
 }
 
 // MARK: Table Delegate

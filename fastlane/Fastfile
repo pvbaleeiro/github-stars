@@ -13,36 +13,38 @@ default_platform(:ios)
 
 platform :ios do
 
-# Clean and increment build
+ # Clean and increment build
   before_all do
     increment_build_number
   end
 
-
-  desc "Description of what the lane does"
+  # Run Unit tests and UI tests
   lane :tests do
   		run_tests(scheme: "GithubStarsTests")
+      run_tests(scheme: "GithubStarsUITests")
 	end
-	
+
+  # Beta version
 	lane :beta do
 
-      add_badge(dark: true)
+  # Apply the badge "beta" on the icon app
+  add_badge(shield: "Version 1.0.0-blue", dark: true)
 
-	# Build the app.
+	# Build the app
   gym(
     workspace: "GithubStars.xcworkspace",
     configuration: "Beta",
     scheme: "GithubStars",
     export_method: 'ad-hoc',
+    clean: true
   )
-  
-  # Upload the build to HockeyApp.
-  hockey(
-    api_token: ENV['HOCKEYAPP_TOKEN'],
-    public_identifier: ENV['HOCKEYAPP_BETA_ID'],
-    notes_type: "1",
-  )
-	
-end
-end
 
+  # Upload the build to HockeyApp
+  hockey(
+    api_token: ENV["HOCKEY_API_TOKEN"],
+    public_identifier: ENV["HOCKEY_APP_PUBLIC_IDENTIFIER"],
+    notify: '1'
+  )
+
+end
+end

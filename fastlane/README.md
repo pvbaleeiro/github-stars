@@ -22,7 +22,7 @@ xcode-select --install
 ```
 fastlane ios tests
 ```
-Description of what the lane does
+
 ### ios beta
 ```
 fastlane ios beta
