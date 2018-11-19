@@ -1,5 +1,5 @@
 //
-//  SplashContract.swift
+//  SplashProtocol.swift
 //  GithubStars
 //
 //  Created by Paulo Ferreira on 04/01/18.

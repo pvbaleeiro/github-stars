@@ -60,7 +60,7 @@ class BaseTableView: UITableView {
     //-------------------------------------------------------------------------------------------------------------
     lazy var refreshBase: UIRefreshControl = {
         let refreshControl = UIRefreshControl()
-        refreshControl.tintColor = UIColor.charcoal()
+        refreshControl.tintColor = .charcoal
         return refreshControl
     }()
     var refreshDelegate: BaseTableViewRefreshDelegate?

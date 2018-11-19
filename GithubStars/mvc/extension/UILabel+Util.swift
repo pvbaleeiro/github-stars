@@ -26,33 +26,33 @@ extension UILabel {
     //-------------------------------------------------------------------------------------------------------------
     func titleStyle() {
         font = UIFont.sanFranciscoBold(size: FontSize.title.rawValue)
-        textColor = UIColor.charcoal()
+        textColor = .charcoal
         textAlignment = .left
     }
     
     func descriptionStyle() {
         font = UIFont.sanFranciscoRegular(size: FontSize.description.rawValue)
-        textColor = UIColor.charcoal()
+        textColor = .charcoal
         textAlignment = .left
     }
     
     func usernameStyle() {
         font = UIFont.sanFranciscoMedium(size: FontSize.username.rawValue)
-        textColor = UIColor.charcoal()
+        textColor = .charcoal
         adjustsFontSizeToFitWidth = true
         textAlignment = .center
     }
     
     func fullnameStyle() {
         font = UIFont.sanFranciscoRegular(size: FontSize.username.rawValue)
-        textColor = UIColor.greyish()
+        textColor = .greyish()
         adjustsFontSizeToFitWidth = true
         textAlignment = .center
     }
     
     func forkStyle() {
         font = UIFont.sanFranciscoBold(size: FontSize.username.rawValue)
-        textColor = UIColor.charcoal()
+        textColor = .charcoal
         textAlignment = .left
     }
     

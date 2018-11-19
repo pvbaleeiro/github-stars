@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A079C681FFD567800C389CD /* RepositoryListContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A079C671FFD567800C389CD /* RepositoryListContract.swift */; };
+		3A079C681FFD567800C389CD /* RepositoryListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A079C671FFD567800C389CD /* RepositoryListProtocol.swift */; };
 		3A079C6E1FFD56B600C389CD /* RepositoryListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A079C6D1FFD56B600C389CD /* RepositoryListPresenter.swift */; };
 		3A079C701FFD56BB00C389CD /* RepositoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A079C6F1FFD56BB00C389CD /* RepositoryListViewController.swift */; };
 		3A079C721FFD56C000C389CD /* RepositoryListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A079C711FFD56C000C389CD /* RepositoryListInteractor.swift */; };
@@ -18,7 +18,7 @@
 		3A079C7F1FFD66DD00C389CD /* UIStoryboard+Instantiate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A079C7E1FFD66DD00C389CD /* UIStoryboard+Instantiate.swift */; };
 		3A079C8E1FFE354F00C389CD /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A079C8D1FFE354F00C389CD /* SplashViewController.swift */; };
 		3A079C901FFE357900C389CD /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A079C8F1FFE357900C389CD /* Splash.storyboard */; };
-		3A079C931FFE370B00C389CD /* SplashContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A079C921FFE370B00C389CD /* SplashContract.swift */; };
+		3A079C931FFE370B00C389CD /* SplashProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A079C921FFE370B00C389CD /* SplashProtocol.swift */; };
 		3A079C981FFE373200C389CD /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A079C971FFE373200C389CD /* SplashPresenter.swift */; };
 		3A079C9A1FFE373600C389CD /* SplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A079C991FFE373600C389CD /* SplashInteractor.swift */; };
 		3A079C9C1FFE373B00C389CD /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A079C9B1FFE373B00C389CD /* SplashRouter.swift */; };
@@ -98,7 +98,7 @@
 /* Begin PBXFileReference section */
 		0A17387D60A63F4156DE53FB /* Pods_GithubStarsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GithubStarsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F7BA26E4CD639C45B1EE936 /* Pods-GithubStars.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubStars.release.xcconfig"; path = "Pods/Target Support Files/Pods-GithubStars/Pods-GithubStars.release.xcconfig"; sourceTree = "<group>"; };
-		3A079C671FFD567800C389CD /* RepositoryListContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryListContract.swift; sourceTree = "<group>"; };
+		3A079C671FFD567800C389CD /* RepositoryListProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryListProtocol.swift; sourceTree = "<group>"; };
 		3A079C6D1FFD56B600C389CD /* RepositoryListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryListPresenter.swift; sourceTree = "<group>"; };
 		3A079C6F1FFD56BB00C389CD /* RepositoryListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryListViewController.swift; sourceTree = "<group>"; };
 		3A079C711FFD56C000C389CD /* RepositoryListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryListInteractor.swift; sourceTree = "<group>"; };
@@ -109,7 +109,7 @@
 		3A079C7E1FFD66DD00C389CD /* UIStoryboard+Instantiate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Instantiate.swift"; sourceTree = "<group>"; };
 		3A079C8D1FFE354F00C389CD /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		3A079C8F1FFE357900C389CD /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
-		3A079C921FFE370B00C389CD /* SplashContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashContract.swift; sourceTree = "<group>"; };
+		3A079C921FFE370B00C389CD /* SplashProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashProtocol.swift; sourceTree = "<group>"; };
 		3A079C971FFE373200C389CD /* SplashPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
 		3A079C991FFE373600C389CD /* SplashInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashInteractor.swift; sourceTree = "<group>"; };
 		3A079C9B1FFE373B00C389CD /* SplashRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
@@ -224,7 +224,6 @@
 				80F8DC391FE5B50B00197B35 /* base */,
 				80F8DC2F1FE59DA600197B35 /* config */,
 				80F8DC361FE5B3CF00197B35 /* controller */,
-				80F8DC281FE598A300197B35 /* delegate */,
 				80F8DC421FE5B92100197B35 /* extension */,
 				80F8DC291FE598C800197B35 /* resource */,
 				80F8DC211FE5911A00197B35 /* util */,
@@ -235,7 +234,6 @@
 		3A079C341FFD51F600C389CD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				3A079CED1FFFE92700C389CD /* Login */,
 				3A079CB11FFE50B300C389CD /* Commom */,
 				3A079CD11FFFA02D00C389CD /* Detail */,
 				3A079C801FFE349400C389CD /* Main */,
@@ -247,7 +245,7 @@
 		3A079C661FFD566700C389CD /* Contract */ = {
 			isa = PBXGroup;
 			children = (
-				3A079C671FFD567800C389CD /* RepositoryListContract.swift */,
+				3A079C671FFD567800C389CD /* RepositoryListProtocol.swift */,
 			);
 			name = Contract;
 			path = "New Group";
@@ -312,6 +310,7 @@
 			children = (
 				3A079C7E1FFD66DD00C389CD /* UIStoryboard+Instantiate.swift */,
 				3A079C9D1FFE3BC100C389CD /* UIWindow+SetRoot.swift */,
+				80F8DC4B1FE5BED700197B35 /* UIColor+Util.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -331,7 +330,7 @@
 		3A079C811FFE34AF00C389CD /* Splash */ = {
 			isa = PBXGroup;
 			children = (
-				3A079C911FFE370000C389CD /* Contract */,
+				3A079C911FFE370000C389CD /* Protocol */,
 				3A079C951FFE371C00C389CD /* Interactor */,
 				3A079C941FFE371400C389CD /* Presenter */,
 				3A079C961FFE372600C389CD /* Router */,
@@ -351,12 +350,12 @@
 			path = "New Group";
 			sourceTree = "<group>";
 		};
-		3A079C911FFE370000C389CD /* Contract */ = {
+		3A079C911FFE370000C389CD /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				3A079C921FFE370B00C389CD /* SplashContract.swift */,
+				3A079C921FFE370B00C389CD /* SplashProtocol.swift */,
 			);
-			name = Contract;
+			name = Protocol;
 			path = "New Group1";
 			sourceTree = "<group>";
 		};
@@ -447,13 +446,6 @@
 			path = Configuration;
 			sourceTree = "<group>";
 		};
-		3A079CC61FFE952100C389CD /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Managers;
-			sourceTree = "<group>";
-		};
 		3A079CD11FFFA02D00C389CD /* Detail */ = {
 			isa = PBXGroup;
 			children = (
@@ -507,13 +499,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		3A079CED1FFFE92700C389CD /* Login */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
 		6C828E76158C3CD96E2A1BAB /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -550,7 +535,6 @@
 				3A079CBA1FFE5EDD00C389CD /* API */,
 				3A079CBF1FFE926700C389CD /* Configuration */,
 				3A079C7D1FFD66CC00C389CD /* Extensions */,
-				3A079CC61FFE952100C389CD /* Managers */,
 				3A079C341FFD51F600C389CD /* Modules */,
 				3A079C771FFD578C00C389CD /* SupportingFiles */,
 				3A079C781FFD605700C389CD /* Utils */,
@@ -620,13 +604,6 @@
 				80F8DC241FE5921700197B35 /* Reachability.swift */,
 			);
 			path = util;
-			sourceTree = "<group>";
-		};
-		80F8DC281FE598A300197B35 /* delegate */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = delegate;
 			sourceTree = "<group>";
 		};
 		80F8DC291FE598C800197B35 /* resource */ = {
@@ -717,7 +694,6 @@
 				80F8DC491FE5BBF500197B35 /* UIFont+Util.swift */,
 				80F8DC471FE5BBC700197B35 /* UILabel+Util.swift */,
 				80F8DC431FE5B94C00197B35 /* UIView+Util.swift */,
-				80F8DC4B1FE5BED700197B35 /* UIColor+Util.swift */,
 				80F8DC681FE7198400197B35 /* UIButton+Util.swift */,
 			);
 			path = extension;
@@ -776,8 +752,6 @@
 				80F8DBF81FE57F7300197B35 /* Sources */,
 				80F8DBF91FE57F7300197B35 /* Frameworks */,
 				80F8DBFA1FE57F7300197B35 /* Resources */,
-				EC809749D5FCB04A15EBB952 /* [CP] Embed Pods Frameworks */,
-				48E5CBEEBE58BDD0C408C24B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -797,8 +771,6 @@
 				80F8DC031FE57F7300197B35 /* Sources */,
 				80F8DC041FE57F7300197B35 /* Frameworks */,
 				80F8DC051FE57F7300197B35 /* Resources */,
-				DF23404993A453FAC6BDC9DF /* [CP] Embed Pods Frameworks */,
-				E607F1B5519B0D43C148A58E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -917,7 +889,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "FILE=\"${SRCROOT}/HockeySDK-iOS/BuildAgent\"\nif [ -f \"$FILE\" ]; then\n\"$FILE\"\nfi";
+			shellScript = "FILE=\"${SRCROOT}/HockeySDK-iOS/BuildAgent\"\nif [ -f \"$FILE\" ]; then\n\"$FILE\"\nfi\n";
 		};
 		3EDF5CCCAA1CAF85654B458F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -925,7 +897,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-GithubStars/Pods-GithubStars-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-GithubStars/Pods-GithubStars-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
@@ -944,22 +916,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GithubStars/Pods-GithubStars-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		48E5CBEEBE58BDD0C408C24B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GithubStarsTests/Pods-GithubStarsTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GithubStars/Pods-GithubStars-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5F04A7429EECAF381E16FAA0 /* [CP] Copy Pods Resources */ = {
@@ -968,16 +925,16 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-GithubStars/Pods-GithubStars-resources.sh",
-				$PODS_CONFIGURATION_BUILD_DIR/HockeySDK/HockeySDKResources.bundle,
+				"${PODS_ROOT}/Target Support Files/Pods-GithubStars/Pods-GithubStars-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/HockeySDK/HockeySDKResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/HockeySDKResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GithubStars/Pods-GithubStars-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GithubStars/Pods-GithubStars-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7C96C4EA6D257CAFC748DF0D /* [CP] Check Pods Manifest.lock */ = {
@@ -1016,51 +973,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DF23404993A453FAC6BDC9DF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GithubStarsUITests/Pods-GithubStarsUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E607F1B5519B0D43C148A58E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GithubStarsUITests/Pods-GithubStarsUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EC809749D5FCB04A15EBB952 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GithubStarsTests/Pods-GithubStarsTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1072,9 +984,9 @@
 				3A079C7C1FFD652200C389CD /* NibReusable.swift in Sources */,
 				80F8DC3B1FE5B52300197B35 /* BaseViewController.swift in Sources */,
 				3A079C9E1FFE3BC100C389CD /* UIWindow+SetRoot.swift in Sources */,
-				3A079C681FFD567800C389CD /* RepositoryListContract.swift in Sources */,
+				3A079C681FFD567800C389CD /* RepositoryListProtocol.swift in Sources */,
 				80F8DC501FE5F5D600197B35 /* UserDetail.swift in Sources */,
-				3A079C931FFE370B00C389CD /* SplashContract.swift in Sources */,
+				3A079C931FFE370B00C389CD /* SplashProtocol.swift in Sources */,
 				80F8DC561FE6132700197B35 /* PullRequestsCell.swift in Sources */,
 				80F8DC251FE5921700197B35 /* Reachability.swift in Sources */,
 				3A079CCC1FFE97FD00C389CD /* GithubService.swift in Sources */,

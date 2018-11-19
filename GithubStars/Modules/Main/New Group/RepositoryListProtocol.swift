@@ -1,5 +1,5 @@
 //
-//  RepositoryListContract.swift
+//  RepositoryListProtocol.swift
 //  GithubStars
 //
 //  Created by Paulo Ferreira on 03/01/18.
@@ -21,7 +21,7 @@ protocol RepositoryListViewProtocol: CommonViewProtocol {
 // MARK: - Presenter
 protocol RepositoryListPresenterProtocol: class {
     
-    weak var view: RepositoryListViewProtocol! { get set }
+    var view: RepositoryListViewProtocol! { get set }
     var router: RepositoryListRouterProtocol! { get set }
     var interactor: RepositoryListInteractorProtocol! { get set }
     
@@ -32,14 +32,14 @@ protocol RepositoryListPresenterProtocol: class {
 // MARK: - Router
 protocol RepositoryListRouterProtocol: class {
     
-    weak var viewController: BaseViewController! { get set }
+    var viewController: BaseViewController! { get set }
     
     func presentDetails(forRepository repository: Repository)
 }
 
 // MARK: - Interactor
 protocol RepositoryListInteractorProtocol: class {
-    weak var output: RepositoryListInteractorOutputProtocol! { get set }
+    var output: RepositoryListInteractorOutputProtocol! { get set }
 
     func fetchRepositories()
 }

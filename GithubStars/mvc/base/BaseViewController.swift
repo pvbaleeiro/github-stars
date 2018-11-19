@@ -11,9 +11,7 @@ import UIKit
 
 class BaseViewController: UIViewController {
 
-    //-------------------------------------------------------------------------------------------------------------
     // MARK: Properties
-    //-------------------------------------------------------------------------------------------------------------
     //Views
     @IBOutlet weak var viewEmptyInfo: UIView!
     @IBOutlet weak var lblEmptyInfo: UILabel!
@@ -22,21 +20,21 @@ class BaseViewController: UIViewController {
     var showAlertErrorCallback: ((_ error: String) -> Void)? = nil
 
     
-    //-------------------------------------------------------------------------------------------------------------
     // MARK: Lifecycle
-    //-------------------------------------------------------------------------------------------------------------
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
     }
     
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+        return .lightContent
+    }
     
-    //-------------------------------------------------------------------------------------------------------------
+    
     // MARK: Setup
-    //-------------------------------------------------------------------------------------------------------------
     func setupLayout() {
-
+        self.setNeedsStatusBarAppearanceUpdate()
     }
     
     func setupData() {
@@ -48,20 +46,22 @@ class BaseViewController: UIViewController {
     }
     
     
-    //-------------------------------------------------------------------------------------------------------------
     // MARK: Aux
-    //-------------------------------------------------------------------------------------------------------------
     func setNavBarWithTitle(title: String) {
         
         //Bug ???
-        self.navigationController?.navigationBar.isHidden = true
-        self.navigationController?.navigationBar.isHidden = false
+//        self.navigationController?.navigationBar.isHidden = true
+//        self.navigationController?.navigationBar.isHidden = false
+//        
+        if #available(iOS 11.0, *) {
+            self.navigationController?.navigationBar.prefersLargeTitles = true
+            self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        }
         
-        //Nav bar
-        view.backgroundColor = UIColor.myLightGray()
-        navigationController?.navigationBar.barTintColor = UIColor.charcoal()
-        navigationController?.navigationBar.tintColor = UIColor.white
-        navigationItem.title = title
-        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        self.view.backgroundColor = .myLightGray
+        self.navigationController?.navigationBar.barTintColor = .charcoal
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        self.navigationItem.title = title
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
 }
