@@ -14,12 +14,19 @@ extension UIView {
     // MARK: Estilos
     //-------------------------------------------------------------------------------------------------------------
     func materialStyleCard() {
-        layer.cornerRadius = 2.0
-        layer.shadowOffset = CGSize(width: 0.0, height: 0.5)
-        layer.shadowRadius = 2.0
-        layer.shadowColor = UIColor.gray.cgColor
-        layer.shadowOpacity = 0.7
+        layer.cornerRadius = 15.0
+//        layer.shadowOffset = CGSize(width: 0.0, height: 0.5)
+//        layer.shadowRadius = 2.0
+//        layer.shadowColor = UIColor.gray.cgColor
+//        layer.shadowOpacity = 0.7
         backgroundColor = UIColor.white
+        
+        self.clipsToBounds = false
+        self.layer.shadowColor = UIColor.black.cgColor
+        self.layer.shadowOpacity = 0.5
+        self.layer.shadowOffset = CGSize(width: 0.9, height: 9.5) //11
+        self.layer.shadowRadius = 10 //18
+        self.layer.shadowPath = UIBezierPath(roundedRect: self.bounds, cornerRadius: 10).cgPath
     }
     
     func circleStyle() {
