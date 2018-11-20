@@ -14,13 +14,6 @@ extension UIView {
     // MARK: Estilos
     //-------------------------------------------------------------------------------------------------------------
     func materialStyleCard() {
-        layer.cornerRadius = 15.0
-//        layer.shadowOffset = CGSize(width: 0.0, height: 0.5)
-//        layer.shadowRadius = 2.0
-//        layer.shadowColor = UIColor.gray.cgColor
-//        layer.shadowOpacity = 0.7
-        backgroundColor = UIColor.white
-        
         self.clipsToBounds = false
         self.layer.shadowColor = UIColor.black.cgColor
         self.layer.shadowOpacity = 0.5

@@ -13,7 +13,7 @@ class CardCell: BaseTableViewCell {
     //-------------------------------------------------------------------------------------------------------------
     // MARK: Properties
     //-------------------------------------------------------------------------------------------------------------
-    @IBOutlet weak var viewCard: UIView!
+    @IBOutlet weak var viewCard: ShadowView!
     @IBOutlet weak var lblDescription: UILabel!
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var lblUsername: UILabel!
@@ -40,8 +40,6 @@ class CardCell: BaseTableViewCell {
     override func setupLayout() {
         super.setupLayout()
         
-        //Card
-        viewCard.materialStyleCard()
         //Label
         lblTitle.titleStyle()
         lblDescription.descriptionStyle()
